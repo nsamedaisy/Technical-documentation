@@ -73,7 +73,7 @@ code {
 	border-radius: 7px;
 }
 
-@media screen(max-width 480px) {
+@media screen and (max-width: 480px) {
 	body {
 		flex-direction: column;
 	}
@@ -92,4 +92,4 @@ code {
 		width: 100%;
 	}
 
-}
+};
