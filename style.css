@@ -1,9 +1,9 @@
 body {
   display: flex;
   font-family:
-	"Open Sans",
-  Arial,
-  sans-serif;
+    "Open Sans",
+    Arial,
+    sans-serif;
   flex-direction: row;
   background-color: white;
   line-height: 1.5;
@@ -44,8 +44,7 @@ html {
 
 #ul-navbar li {
   border-top: 1px solid #4d4e53;
-  /* background-color: aliceblue; */
-  padding: 10px 0px;
+  padding: 10px;
   margin: 0;
   text-align: left;
   list-style-type: none;
