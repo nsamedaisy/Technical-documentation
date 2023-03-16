@@ -1,106 +1,105 @@
 body {
-	display: flex;
-	font-family: Open Sans,
-	Arial,
-	sans-serif;
-	flex-direction: row;
-	background-color: white;
-	line-height: 1.5;
-	color: #4d4e53;
-	overflow: auto;
+  display: flex;
+  font-family:
+	"Open Sans",
+  Arial,
+  sans-serif;
+  flex-direction: row;
+  background-color: white;
+  line-height: 1.5;
+  color: #4d4e53;
+  overflow: auto;
 }
 
-html{
-	scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 #navbar {
-	height: 100vh;
-	width: 17%;
-	position: fixed;
-	margin-left: 0;
-	border-right: solid #999aa0;
+  height: 100vh;
+  width: 17%;
+  position: fixed;
+  margin-left: 0;
+  border-right: solid #999aa0;
 }
 
 .nav-link {
-	text-decoration: none;
-	color: #4d4e53;
+  text-decoration: none;
+  color: #4d4e53;
 }
 
 .navbar-header {
-	color: black;
-	font-weight: 350;
-	font-size: 28px;
-	text-align: center;
+  color: black;
+  font-weight: 350;
+  font-size: 28px;
+  text-align: center;
 }
 
 #ul-navbar {
-	margin: 0;
+  margin: 0;
 
-	/* background-color: aqua;
-	margin-left: -50px; */
+  /* background-color: aqua;
+  margin-left: -50px; */
 }
 
 #ul-navbar li {
-	border-top: 1px solid #4d4e53;
-	
-	/* background-color: aliceblue; */
-	padding: 10px 0px;
-	margin: 0;
-	text-align: left;
-	list-style-type: none;
-	color: #4d4e53;
+  border-top: 1px solid #4d4e53;
+  /* background-color: aliceblue; */
+  padding: 10px 0px;
+  margin: 0;
+  text-align: left;
+  list-style-type: none;
+  color: #4d4e53;
 }
 
 #main-doc {
-	height: 100vh;
-	margin-left: 315px;
-	position: absolute;
-	margin-bottom: 115px;
-	padding: 40px;
-	max-width: 83%;
-	z-index: 0;
+  height: 100vh;
+  margin-left: 315px;
+  position: absolute;
+  margin-bottom: 115px;
+  padding: 40px;
+  max-width: 83%;
+  z-index: 0;
 }
 
 header {
-	font-size: 28px;
-	font-weight: 350;
-	color: black;
-	z-index: 1;
+  font-size: 28px;
+  font-weight: 350;
+  color: black;
+  z-index: 1;
 }
 
 #main-doc,
 .main-sec,
 .ul-li {
-	line-height: 2;
+  line-height: 2;
 }
 
 code {
-	background-color: #f7f7f7;
-	display: block;
-	padding: 15px;
-	text-align: left;
-	line-height: 170%;
-	border-radius: 7px;
+  background-color: #f7f7f7;
+  display: block;
+  padding: 15px;
+  text-align: left;
+  line-height: 170%;
+  border-radius: 7px;
 }
 
 @media screen and (max-width: 480px) {
-	body {
-		flex-direction: column;
-	}
+  body {
+    flex-direction: column;
+  }
 
-	#navbar {
-		margin-bottom: 40px;
-		height: auto;
-		position: relative;
-	}
+  #navbar {
+    margin-bottom: 40px;
+    height: auto;
+    position: relative;
+  }
 
-	#navbar a {
-		float: left;
-	}
+  #navbar a {
+    float: left;
+  }
 
-	#main-doc {
-		width: 100%;
-	}
-
+  #main-doc {
+    width: 100%;
+  }
 }
