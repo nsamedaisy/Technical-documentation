@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
   font-family:
@@ -8,8 +13,13 @@ body {
   background-color: white;
   line-height: 1.5;
   color: #4d4e53;
-  overflow: auto;
+  /* overflow: auto; */
+  min-height: 100vh;
 }
+
+/* main-sec {
+  margin-top: 40px;
+} */
 
 html {
   scroll-behavior: smooth;
@@ -21,11 +31,20 @@ html {
   position: fixed;
   margin-left: 0;
   border-right: solid #999aa0;
+  min-width: 290px;
+  display: block;
 }
 
 .nav-link {
   text-decoration: none;
   color: #4d4e53;
+  display: block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  text-indent: 5px;
 }
 
 .navbar-header {
@@ -33,13 +52,11 @@ html {
   font-weight: 350;
   font-size: 28px;
   text-align: center;
+  padding: 10px;
 }
 
 #ul-navbar {
-  margin: 0;
-
-  /* background-color: aqua;
-  margin-left: -50px; */
+  list-style: none;
 }
 
 #ul-navbar li {
@@ -52,26 +69,29 @@ html {
 }
 
 #main-doc {
-  height: 100vh;
+  /* height: 100vh; */
   margin-left: 315px;
-  position: absolute;
+  /* position: absolute; */
   margin-bottom: 115px;
   padding: 40px;
   max-width: 83%;
-  z-index: 0;
 }
 
 header {
   font-size: 28px;
-  font-weight: 350;
+  font-weight: 400px;
   color: black;
-  z-index: 1;
 }
 
 #main-doc,
 .main-sec,
 .ul-li {
   line-height: 2;
+}
+
+.main-sec,
+.ul-li {
+ padding-left: 30px;
 }
 
 code {
@@ -83,22 +103,24 @@ code {
   border-radius: 7px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 700px) {
   body {
-    flex-direction: column;
+    flex-direction: row;
+    display: block;
+    width: 100%;
+    flex-wrap: wrap;
   }
 
   #navbar {
     margin-bottom: 40px;
-    height: auto;
-    position: relative;
-  }
-
-  #navbar a {
-    float: left;
+    height: 100%;
+    position: fixed;
   }
 
   #main-doc {
     width: 100%;
+    /* float: left;
+    margin: 0 20px;
+    margin-left: 350px; */
   }
 }
